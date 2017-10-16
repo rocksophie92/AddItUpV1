@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_add_it_up"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#a2fdfcfd"
+tools:context="com.example.p3750852.additupv1.AddOsszeV1">
+
+
+<Button
+    android:id="@+id/osszead"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="+"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:fontFamily="sans-serif-light"
+    android:textStyle="bold"
+    android:background="#03544e"
+    android:textColor="#ffffff"
+    android:onClick="@String.szamolas"
+    />
+
+    <Button
+        android:id="@+id/kivon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/osszead"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:background="#0b6c6b"
+        android:textColor="#ffffff"
+        android:onClick="@String.szamolas"
+        />
+
+    <Button
+        android:id="@+id/szoroz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:layout_above="@id/kivon"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:background="#09b6b9"
+        android:textColor="#ffffff"
+        android:onClick="@String.szamolas"
+        />
+
+    <Button
+        android:id="@+id/oszt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:layout_above="@id/szoroz"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:background="#0ad7e6"
+        android:textColor="#ffffff"
+        android:onClick="@String.szamolas"
+        />
+
+<EditText
+    android:id="@+id/edit_text1"
+    android:inputType="number"
+    android:layout_width="match_parent"
+    android:background="#eae5ea"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_height="30dp" />
+
+<EditText
+    android:id="@+id/edit_text2"
+    android:inputType="number"
+    android:layout_width="match_parent"
+    android:background="#ebe9ed"
+    android:layout_height="30dp"
+    android:layout_marginBottom="20dp"
+    android:layout_below="@id/edit_text1"
+    />
+
+<TextView
+    android:id="@+id/eredmeny1"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:textSize="48dp"
+    android:textColor="@android:color/holo_blue_dark"
+    android:layout_below="@id/edit_text2"
+    />
+
+
+</RelativeLayout>
